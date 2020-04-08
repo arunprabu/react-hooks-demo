@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`company component should have right company comp snapshot 1`] = `
+<div>
+  <p>
+    Welcome to My Company's Official Webpage!
+  </p>
+  <div
+    className="redText"
+    data-testid="companyEl"
+  >
+    Facebook
+  </div>
+  <input
+    placeholder="company"
+    type="text"
+  />
+  <br />
+  <br />
+  <input
+    onChange={[Function]}
+    placeholder="Fav Company"
+    type="text"
+    value=""
+  />
+</div>
+`;
