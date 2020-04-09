@@ -14,7 +14,7 @@ const Todo = () => {
   todoList = state.map( (todo, index) => {
     return(
       <li className="list-group-item" key={index}>
-        {todo.text.toString()}
+        {todo.text}
         <button type="button" 
         className="btn btn-danger btn-sm">Delete</button>
       </li>

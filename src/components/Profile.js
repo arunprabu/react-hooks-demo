@@ -2,33 +2,24 @@ import React, { useState } from 'react'
 
 const Profile = () => {
   
-  // to have state inside fn comp, we can use useState() . 
-  // this will take in data and return getter and setter in an array. 
-  // We can do array destructuring to capture both.
-  const [profile, setProfile] = useState({
+  // having state in fn comp 
+  const [ myProfile, setMyProfile ] = useState({
     name: 'Arun',
     city: 'Chennai'
-  });
+  }); // will return array with getter and setter
 
-  // old fashioned --- and unnecessary code block
-  // const updateProfile = () => {
-  //   setProfile({
-  //     name: 'VJ',
-  //     city: 'Chennai'
-  //   });
-  //   console.log(profile);
-  // }
+  console.log(myProfile);
 
   return(
     <div>
       <h2>Profile | useState() Example </h2>
-      <p>{profile.name} from {profile.city}</p>
-      <button type='button' onClick={() => {
-        setProfile({
+      <p>{myProfile.name} from {myProfile.city} </p>
+      <button type='button' onClick={ () => { 
+        setMyProfile({
           name: 'VJ',
-          city: 'Chennai'
-        });
-      }}>Update Profile</button>
+          city: 'Hyd'
+        })
+      } }>Update Profile</button>
     </div>
     
   )

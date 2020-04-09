@@ -3,18 +3,19 @@
 exports[`company component should have right company comp snapshot 1`] = `
 <div>
   <p>
-    Welcome to My Company's Official Webpage!
+    Welcome to My Company's Official Webpage!!!
   </p>
   <div
     className="redText"
     data-testid="companyEl"
-  >
-    Facebook
-  </div>
+  />
   <input
     placeholder="company"
     type="text"
   />
+  <p>
+    This is amazing!
+  </p>
   <br />
   <br />
   <input

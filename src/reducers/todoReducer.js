@@ -1,7 +1,6 @@
 function todoReducer(state = [], action) {
   switch(action.type){
     case 'ADD_TODO':
-      debugger;
       return [
         ...state, // spreading array using es6 spread operator 
         {

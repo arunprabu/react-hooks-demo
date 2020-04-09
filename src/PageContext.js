@@ -1,3 +1,3 @@
 import {createContext} from 'react'; 
 
-export const PageContext = createContext(); // we can hae any data
+export const PageContext = createContext(); // we can have any data

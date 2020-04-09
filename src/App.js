@@ -15,15 +15,15 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div className="container">
-      <h1>React CRUD App with Hooks</h1>
-      <Switch>
-        <PageContext.Provider value={userStatus}>
-          <Route path="/" component={Home} exact/>
-          <Route path="/about" exact component={About} />
-        </PageContext.Provider>
-      </Switch>
-    </div>
+      <div className="container">
+        <h1>React App with Hooks | Demo | learn react </h1>
+        <Switch>
+          <PageContext.Provider value={userStatus}>
+            <Route path="/" component={Home} exact/>
+            <Route path="/about" exact component={About} />
+          </PageContext.Provider>
+        </Switch>
+      </div>
     </BrowserRouter>
   );
 }

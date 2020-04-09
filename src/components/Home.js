@@ -23,11 +23,9 @@ const Home = () => {
         <div className='col-md-8'>
           <UserData></UserData>
         </div>
+        
         <div className='col-md-12'>
           <Todo></Todo>
-        </div>
-        <div className='col-md-12'>
-          <ViewUsers></ViewUsers>
         </div>
         <div className='col-md-12'>
           <MyTasks></MyTasks>

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { PageContext } from '../../PageContext';
 import Company from './Company/Company';
@@ -20,7 +20,7 @@ const About = () => {
 }
 
 export const add = (a, b) =>{
-  return a +b;
+  return a +b ;
 }
 
 export default About;

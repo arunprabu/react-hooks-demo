@@ -16,14 +16,14 @@ describe('company component', () => {
 
   it('should display the prop correctly', () => {
     // take the element to put under test
-    const { getByTestId } = render( <Company name='Facebook'></Company>);
+    const { getByTestId } = render( <Company companyName='Facebook'></Company>);
     // fetching the element by companyEl; // refer Company.js 
     // checking if props are received correctly
     expect(getByTestId('companyEl')).toHaveTextContent('Facebook');// companyEl is the test id of the element
   });
 
   it('should have the right placeholder in input', () => {
-    const { queryByPlaceholderText} = render(<Company />);
+    const { queryByPlaceholderText } = render(<Company />);
 
     //if the placeholder is not matching, it will fail
     expect(queryByPlaceholderText('company')).toBeTruthy();
@@ -55,7 +55,7 @@ describe('company component', () => {
     console.log(tree);
     expect(tree).toMatchSnapshot();
   });
-
+  
 });
 
 
